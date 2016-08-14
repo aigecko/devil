@@ -14,10 +14,13 @@ elsif RUBY_PLATFORM =~ /darwin/
 
 elsif RUBY_PLATFORM =~ /linux/
     exit unless have_library("IL")
+    exit unless have_library("glut")
+    exit unless have_library("GL")
 
 end
 
 # all platforms
 exit unless have_library("ILU")
+exit unless have_library("ILUT")
 
 create_makefile('devil')

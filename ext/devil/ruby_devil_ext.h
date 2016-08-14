@@ -5,4 +5,4 @@ typedef struct RArray RArray;
 
 extern void InitializeIL();
 extern void InitializeILU();
-/* extern void InitializeILUT();  */
+extern void InitializeILUT();
